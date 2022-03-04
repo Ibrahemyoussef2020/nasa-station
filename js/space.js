@@ -7,7 +7,7 @@ let containers = document.querySelectorAll(".container");
         obs = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                 entry.target.classList.toggle("drop",entry.isIntersecting);
-                }),{ threshold : 1}
+                }),{ threshold : .5}
         });
 
         centerSection.forEach(section =>{

@@ -1,15 +1,22 @@
 /****************************************************************/
 /*                    the project                               */
 /****************************************************************/
+:root{
+    --larg_font : 2.5rem;
+    --medium_font : 1.8rem;
+    --small_font  : 1.3rem;
+}
+
 body,*{
     box-sizing: border-box;
+    line-height: 2.5rem;
 }
 li,button{
     cursor: pointer;
 }
-
-
-
+li{
+    font-size: 1.3rem;
+}
 /********************************************/
 /*                    the header            */
 /********************************************/
@@ -67,18 +74,17 @@ li,button{
     list-style: none;
     flex-wrap: wrap;
 }
-
 .menu {
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-60%);
-    right: 5px;
+    right: 10px;
     padding: 5px;
     border: none;
     outline: none;
     background: transparent;
     color: #fff;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
     font-family:"Font Awesome 5 Free";
 }
@@ -133,25 +139,46 @@ aside ul{
     color: #fff;
     position: relative;
 }
-.container::after {
+.container .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .background-Rocket {
+    background-image: url("../images/Rocket.webp");
+}
+.container .background-shuttle {
+    background-image: url("../images/shuttle.webp");
+    background-position: 65% center;
+}
+.container .background-fire {
+    background-image: url("../images/fire.webp");
+}
+.container .background-moon {
+    background-image: url("../images/moon.webp");
+    background-position: 65% center;
+}
+.container .background-arrived img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right bottom;
+}
+
+.container .background::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(218, 153, 92, 0.2);
-    z-index: -1;
-}
-.container img {
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .container .logo{
     position: absolute;
@@ -175,31 +202,38 @@ aside ul{
 .center_section{
     position: absolute;
     top: 50%;
+    transition-delay: 2.2s;
     transform: translateY(-200%)scale(.5,.5);
     transition: transform .5s ease-in-out .1s;
     left: 5%;
-    min-width: 70%;
+    width: 80%;
     z-index: 10;
     color: #fff;
     opacity: 0;
-    transform: translateY(-120%)scale(.3,.3);
     transition: transform 1s, opacity 1s ;
 }
 .drop{
     transform: translateY(-20%)scale(1,1);
     opacity: 1;
 }
- .center_section h1{
-        font-size: 1.5rem ;
+.center_section h4{
+    font-size: var(--medium_font);
+    
+    
 }
-
+ .center_section h1{
+        font-size: var(--larg_font);
+        margin: 0 0;
+        font-weight: 400;
+       
+}
  .center_section button{
     padding: 10px 25px;
     border : 3px solid #fff;
     border-radius: 2px;
     background: transparent;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: calc(var(--small_font) - 0.2rem);
     font-weight: 900;
     text-align: center;
     z-index: 2;
@@ -229,7 +263,26 @@ aside ul{
     transform: scale3d(1,1,1);
     transform-origin: bottom center;
 }
-
+@media only screen and (max-width: 900px) {
+    :root{
+        --larg_font : 1.8rem;
+        --medium_font : 1.4rem;
+        --small_font  : 1.2rem;
+    } 
+  }
+@media only screen and (max-width: 600px) {
+    .center_section{
+        width: 95%;
+    }
+    :root{
+        --larg_font : 1.4rem;
+        --medium_font : 1.2rem;
+        --small_font  : 1rem;
+    }
+    .container.arrived .center_section.drop{
+        transform: translateY(-120%)scale(1,1) !important;
+    }
+  }
 
 /********************************************/
 /*                    the footer            */
@@ -261,4 +314,3 @@ aside ul{
     margin: 10px 5px ;
     text-decoration: none;
 }
-
