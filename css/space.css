@@ -9,7 +9,7 @@
 
 body,*{
     box-sizing: border-box;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 li,button{
     cursor: pointer;
@@ -201,7 +201,7 @@ aside ul{
 /********************************************************/
 .center_section{
     position: absolute;
-    top: 50%;
+    top: 30%;
     transition-delay: 2.2s;
     transform: translateY(-200%)scale(.5,.5);
     transition: transform .5s ease-in-out .1s;
@@ -263,27 +263,6 @@ aside ul{
     transform: scale3d(1,1,1);
     transform-origin: bottom center;
 }
-@media only screen and (max-width: 900px) {
-    :root{
-        --larg_font : 1.8rem;
-        --medium_font : 1.4rem;
-        --small_font  : 1.2rem;
-    } 
-  }
-@media only screen and (max-width: 600px) {
-    .center_section{
-        width: 95%;
-    }
-    :root{
-        --larg_font : 1.4rem;
-        --medium_font : 1.2rem;
-        --small_font  : 1rem;
-    }
-    .container.arrived .center_section.drop{
-        transform: translateY(-120%)scale(1,1) !important;
-    }
-  }
-
 /********************************************/
 /*                    the footer            */
 /********************************************/
@@ -314,3 +293,26 @@ aside ul{
     margin: 10px 5px ;
     text-decoration: none;
 }
+/***************************************/
+/*                 media query         */
+/***************************************/
+@media only screen and (max-width: 900px) {
+    :root{
+        --larg_font : 1.8rem;
+        --medium_font : 1.4rem;
+        --small_font  : 1.2rem;
+    } 
+  }
+@media only screen and (max-width: 600px) {
+    .center_section{
+        width: 95%;
+    }
+    :root{
+        --larg_font : 1.4rem;
+        --medium_font : 1.2rem;
+        --small_font  : 1rem;
+    }
+    .container.arrived .center_section.drop{
+        transform: translateY(0)scale(1,1) !important;
+    }
+  }

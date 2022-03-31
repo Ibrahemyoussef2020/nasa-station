@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty_Food</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/home.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Start Header -->
+  <header id="header" class="header py-4">
+    <div class="container">
+      <div class="nav-bar d-flex justify-content-between align-items-center">
+        <div class="logo"><a href="#">Tasty</a></div>
+        <div class="icon-bar d-block d-lg-none" id="toggle-nav">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+        <ul class="nav-links d-lg-flex d-none" id="nav_linkss">
+          <div class="icon-right">
+            <div id="close_nav" class="close-icon-nav d-block d-lg-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z"/>
+                <path fill-rule="evenodd" d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z"/>
+              </svg>
+            </div>
+          </div>
+          <li>
+            <a class="active" href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li class="dark_mode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+              <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+    <!-- Scroll To Top -->
+    <div id="scroll-to-top" class="scroll-to-top">
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+          <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+        </svg>
+      </a>
+    </div>
+
+  <!-- Start Hero -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="content">
+          <div class="row gy-4 align-items-center justify-content-center">
+            <div class="col-md-6">
+              <div class="text d-flex flex-column gap-3">
+                <h1 class="title">Tasty Food</h1>
+                <h4 class="subtitle">Try the best food of the week.</h4>
+                <div class="btn-view d-flex justify-content-start">
+                  <button>View Menu</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image">
+                <img class="img-fluid" src="img/home.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="content">
+          <div class="row gy-4 flex-column-reverse flex-md-row align-items-center justify-content-center">
+            <div class="col-md-6">
+              <div class="image">
+                <img class="img-fluid" src="img/about.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="about-text d-flex flex-column gap-3">
+                <h5 class="title">About Us</h5>
+                <h2 class="about-title">We cook the best <br> tasty food</h2>
+                <p class="description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
+                <div class="link d-flex">
+                  <a href="#" class="button">Explore History</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Services -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col-12">
+            <span class="section-subtitle">Offerning</span>
+            <h2 class="service-title mt-2">Our amazing services</h2>
+          </div>
+        </div>
+        <div class="row gy-5 align-items-center">
+          <div class="col-lg-4 col-sm-6 center">
+            <div class="icon"><i class="fas fa-utensils"></i></div>
+            <h2 class="title">Excellent Food</h2>
+            <p class="description">We offer our clients excellent quality services for many years, with the best and.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 center">
+            <div class="icon"><i class="fas fa-pizza-slice"></i></div>
+            <h2 class="title">Fast Food</h2>
+            <p class="description">We offer our clients excellent quality services for many years, with the best and.</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 center">
+            <div class="icon"><i class="fas fa-truck-moving"></i></div>
+            <h2 class="title">Excellent Food</h2>
+            <p class="description">We offer our clients excellent quality services for many years, with the best and.</p>
+          </div>
+          </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Start Menu -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <div class="content">
+          <div class="row text-center">
+            <div class="col-12 mb-5">
+              <h4 class="subtitle">Special</h4>
+              <h2 class="title">Menu Of The Week</h2>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-lg-4 col-sm-6">
+              <div class="box">
+                <div class="image">
+                  <img src="img/plate1.png" alt="">
+                </div>
+                <div class="box-title">Barbecue Salad</div>
+                <span class="description">Delicious dish</span>
+                <span class="price">$22.00</span>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="box">
+                <div class="image">
+                  <img src="img/plate2.png" alt="">
+                </div>
+                <div class="box-title">Barbecue Salad</div>
+                <span class="description">Delicious dish</span>
+                <span class="price">$22.00</span>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="box">
+                <div class="image">
+                  <img src="img/plate3.png" alt="">
+                </div>
+                <div class="box-title">Barbecue Salad</div>
+                <span class="description">Delicious dish</span>
+                <span class="price">$22.00</span>
+                <a href="#"><i class="fas fa-cart-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Section App -->
+    <section id="app" class="app">
+      <div class="container">
+        <div class="content">
+          <div class="row gy-4 justify-content-between align-items-center flex-sm-row flex-column-reverse">
+            <div class="col-sm-5">
+              <div class="image">
+                <img class="img-fluid" src="img/movil-app.png" alt="">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="app-data">
+                <h5 class="title">App</h5>
+                <h2 class="title-second">App Is Aviable</h2>
+                <p class="text">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+                <div class="btns">
+                  <a href="#" class="btn-apple">
+                    <div class="i-apple">
+                      <i class="fab fa-apple"></i>
+                    </div>
+                    <div class="btn-text">
+                      <span class="l-1">Download On The</span>
+                      <span class="l-2">App Store</span>
+                    </div>
+                  </a>
+                  <a href="#" class="btn-google-play">
+                    <div class="i-google-play">
+                      <i class="fab fa-google-play"></i>
+                    </div>
+                    <div class="btn-text">
+                      <span class="l-1">Download On The</span>
+                      <span class="l-2">Gogle Play</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="container">
+          <div class="content d-flex align-items-center justify-content-between">
+            <div class="data">
+              <h5 class="subtitle">Let's Talk</h5>
+              <h2 class="title">Contact Us</h2>
+              <p class="description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+            </div>
+            <div class="link">
+              <a class="button" href="#">Contact Us Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content">
+          <div class="row gy-5">
+            <div class="col-lg-3 col-sm-6">
+              <div class="box logo">
+                <h3 class="logo"><a href="#">Tasty Food</a></h3>
+                <span class="description">Restaurant</span>
+                <ul class="soicals d-flex align-items-center gap-3">
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="box serv">
+                <h2 class="title">Services</h2>
+                <ul class="links">
+                  <li>
+                    <a href="#">Delivery</a>
+                  </li>
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">Fast food</a>
+                  </li>
+                  <li>
+                    <a href="#">Reserve your spot</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="box info">
+                <h2 class="title">Information</h2>
+                <ul class="links">
+                  <li>
+                    <a href="#">Event</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact us</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms of services</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="box adress">
+                <h2 class="title">Adress</h2>
+                <ul class="links">
+                  <li>
+                    <a href="#">Lima - Peru</a>
+                  </li>
+                  <li>
+                    <a href="#">Jr Union #999</a>
+                  </li>
+                  <li>
+                    <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D201227370271%26fbclid%3DIwAR1eKfK4Umq1rsSk5MySvz3f4RKhUAeCvJm5SxdIew8BnU6eyZH5A9WItBg&h=AT1SquT-Db0xeCv_vg_l7ZyogiQPB_4M3vLLeJEXnRkAyF5D-eeBfyXQ_XCirl7H6mKWFOxYZuUUC4FDfKyjakl78PIpNspXxi4ZBwBmDBenePMtALtikO6y31BfyFk0irLJHA" target="_blank">+20 1227370271</a>
+                  </li>
+                  <li>
+                    <a href="#">yousefazm1240@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <script src="javascript/bootstrap.js"></script>
+  <script src="javascript/javascript.js"></script>
+</body>
+</html>
+<!-- @_Finished With Yousef | Mostafa Ahmed In 2022 => +20 1227370271 -->
